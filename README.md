@@ -12,27 +12,27 @@ cd <repository-folder>
 
 ### 2. Install Dependencies
 
-You need to install dependencies for both the remote and host folders.
+You need to install dependencies for both the Provider and consumer folders.
 
-#### In the Remote Folder
+#### In the Provider Folder
 
 ```bash
-cd remote
+cd provider
 yarn install
 ```
 
-#### In the Host Folder
+#### In the Consumer Folder
 
 Open a new terminal or navigate back to the root folder and then:
 
 ```bash
-cd host
+cd consumer
 yarn install
 ```
 
 ### 3. Run the Application
 
-#### In the Host Folder
+#### In the Consumer Folder
 
 ```bash
 yarn dev
@@ -53,4 +53,4 @@ Uncaught (in promise) TypeError: Cannot read properties of null (reading 'isCE')
 
 ## Additional Notes
 
-- Ensure that both the remote and host folders have their dependencies installed before running the application.
+- Ensure that both the provider and consumer folders have their dependencies installed before running the application.
