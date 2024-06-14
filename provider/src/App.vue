@@ -16,8 +16,7 @@ export default {
 </script>
 <template>
   <div>
-    hi from remote{{ year }}
+    hi from provider
     <router-view />
-
   </div>
 </template>
