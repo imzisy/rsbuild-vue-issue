@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
   <div :class="$style.view">
-    Hi from consumer
+    Hi from consumer test
     <div :class="$style.main">
       <router-view />
     </div>

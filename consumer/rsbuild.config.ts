@@ -49,9 +49,9 @@ export default defineConfig({
     },
   },
   plugins: [pluginVue({
-    // splitChunks: {
-    //   vue: false,
-    //   router: false,
-    // },
+    splitChunks: {
+      vue: false,
+      router: false
+    }
   })],
 });
