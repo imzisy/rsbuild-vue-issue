@@ -6,14 +6,14 @@ export default {
   components: {
     AppIndex,
   },
-  setup() {},
+  setup() { },
 };
 </script>
 
 <template>
-  
+
   <AppIndex>
-hello
+    hello
     <router-view />
   </AppIndex>
 </template>
