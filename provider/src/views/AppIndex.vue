@@ -24,6 +24,9 @@ export default {
 };
 </script>
 <template>
-  Hello from App index {{ userData }}
+  <div class="bg-blue-400">
+    bg-blue-400
+    Hello from App index {{ userData }}
+  </div>
   <slot></slot>
 </template>

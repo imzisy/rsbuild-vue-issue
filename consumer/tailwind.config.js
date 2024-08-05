@@ -2,12 +2,10 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   mode: "jit",
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
-  darkMode: "class", // or 'media' or 'class'
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    backgroundImage: {
-      "panel-bg": "url('public/img/icons/panel-bg.png')",
-    },
     container: {
       center: true,
     },

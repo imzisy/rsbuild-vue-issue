@@ -15,6 +15,7 @@ export default defineConfig({
     port: 3000,
   },
   output: {
+    // injectStyles: true,
     assetPrefix: '/',
     filenameHash: true,
   },
@@ -30,9 +31,9 @@ export default defineConfig({
       appendPlugins([
         new ModuleFederationPlugin({
           name: `ASSET_HOST`,
-          filename: `ASSET_HOST__remoteEntry.js`,
+          filename: `remoteEntry.js`,
           remotes: {
-            "@remote/auth": "ASSET_REMOTE@http://localhost:3001/remoteEntry.js",
+            "@remote/auth": "ASSET_HOST@http://localhost:3001/remoteEntry.js",
           },
           shared: {
             vue: {

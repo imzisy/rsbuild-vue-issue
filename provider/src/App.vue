@@ -15,8 +15,7 @@ export default {
 };
 </script>
 <template>
-  <div>
+  <div class="bg-green-500">
     hi from provider
-    <router-view />
   </div>
 </template>

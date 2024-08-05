@@ -6,7 +6,7 @@ export default {
 <template>
   <div :class="$style.view">
     Hi from consumer test
-    <div :class="$style.main">
+    <div>
       <router-view />
     </div>
   </div>
@@ -20,6 +20,6 @@ export default {
   @apply grid grid-cols-1 gap-4 md:grid-cols-3;
 }
 .main {
-  @apply m-auto;
+  @apply m-auto bg-red-400;
 }
 </style>

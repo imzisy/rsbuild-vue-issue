@@ -25,6 +25,7 @@ export default defineConfig({
   output: {
     assetPrefix: '/',
     filenameHash: true,
+    inlineStyles : true,
   },
   tools: {
     rspack: (config, { appendPlugins }) => {
@@ -40,7 +41,7 @@ export default defineConfig({
       config.resolve.alias['config'] = path.resolve(__dirname, "config");
       appendPlugins([
         new ModuleFederationPlugin({
-          name: `ASSET_REMOTE`,
+          name: `ASSET_HOST`,
           filename: `remoteEntry.js`,
           exposes: {
             "./AppIndex": "./src/views/AppIndex",
@@ -60,10 +61,5 @@ export default defineConfig({
       ]);
     },
   },
-  plugins: [pluginVue({
-    splitChunks: {
-      vue: false,
-      router: false
-    }
-  })],
+  plugins: [pluginVue()],
 });

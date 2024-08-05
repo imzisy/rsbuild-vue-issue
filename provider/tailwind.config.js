@@ -2,11 +2,11 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   mode: "jit",
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}","./src/views/AppIndex.vue","./src/App.vue"],
   theme: {
-    container: {
-      center: true,
-    },
+    // container: {
+    //   center: true,
+    // },
     fontFamily: {
       sans: ["Lato", ...defaultTheme.fontFamily.sans],
       mono: ["'Major\\ Mono\\ Display'", ...defaultTheme.fontFamily.mono],

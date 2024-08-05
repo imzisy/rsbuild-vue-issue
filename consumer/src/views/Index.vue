@@ -13,7 +13,7 @@ export default {
 <template>
   
   <AppIndex>
-    sssemas foosss
+hello
     <router-view />
   </AppIndex>
 </template>
