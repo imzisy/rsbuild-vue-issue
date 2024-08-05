@@ -6,6 +6,6 @@ export default {
 
 <template>
   <div>
-    landing page dd
+    landing page
   </div>
 </template>

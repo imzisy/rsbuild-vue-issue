@@ -14,7 +14,7 @@ export default {
 
 <style module scoped>
 .view {
-  @apply min-h-screen overflow-hidden bg-gray-100 print: !overflow-visible print:invisible print:h-full;
+  @apply min-h-screen overflow-hidden bg-gray-100 print: print:invisible print:h-full;
 }
 
 .gridView {
